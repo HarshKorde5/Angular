@@ -1,0 +1,18 @@
+
+<h1>Property Binding</h1>
+
+<h4>Without property binding : stays disabled</h4>
+<button disabled>Click Me</button>
+
+<h4>With property binding : as per the variable</h4>
+
+<button [disabled] = "btnDisable">Click Me</button>
+
+<button (click) = "toggleBtn()">Toggle</button>
+
+<h4>Read only input</h4>
+<input [readonly]="inputReadonly">
+
+<h4>Img url as property binding</h4>
+
+<img style="height: 200px; width: 300px;" [src]="imgUrl">
