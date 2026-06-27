@@ -1,0 +1,24 @@
+<h2>Input Event</h2>
+
+<input (input) = "handleInput($event)" (change) = "handleInput($event)" (blur) = "handleInput($event)" (focus) = "handleInput($event)"> 
+<br>
+<button (click) = "handleInput($event)" value="test-button">Test</button>
+<br>
+
+<select (change) = "handleInput($event)">
+    <option>car</option>
+    <option>bike</option>
+    <option>truck</option>
+    <option>bus</option>
+</select>
+
+<div style="height: 100px; width: 100px; background-color: cadetblue;" (mouseenter) = "handleInput($event)">
+    <p>Div 1</p>
+</div>
+
+
+<div style="height: 100px; width: 100px; background-color: burlywood;" (mouseleave) = "handleInput($event)">
+    <p>Div 2</p>
+</div>
+<br>
+<input (keydown) = "handleInput($event)">
